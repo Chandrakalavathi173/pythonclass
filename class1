@@ -1,9 +1,13 @@
 #Addition of numbers
+
+
 num1=int(input())
 num2=int(input())
 print(num1+num2)
 ---------------------------
 #greates of three numbers
+
+
 num1=int(input())
 num2=int(input())
 num3=int(input())
@@ -15,6 +19,8 @@ else:
   print("num3 is greater")
 ----------------------------------
 #if numbers are equal
+
+
 num1=int(input())
 num2=int(input())
 num3=int(input())
