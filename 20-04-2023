@@ -32,6 +32,40 @@ print(name[-3])  #n    [negative indexing: Starts from end and frst index repres
  3. isdigit() -- returns true if string is digit (no arguments taken)
  4. isalpha() --returns true if string is alphabets
  5. index() --frst occurence of the character
- 6. 
+ 6. upper() --converts all characters into uppercase
+ 7. lower -- conversts all characters into lowercase
+ 8. strip() --removes leading and trailing white spaces
+ 9. replace() --rplaces the old substring with new one (aruments : old,new)
+ 10. capitalize -- capitalizes the frst cahracter of the word
+ 
+ ------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ LISTS:
+ 
+ List is a datatype which stores data of different datatypes(heterogeneous)
+ it is a mutable datatype
+ 
+ example:
+ list1=[1,2,"abc",10.998798]
+ print(type(list1))
+ the elemnts accesssed using indexes.
+ duplicates are allowed in the list.
+ when input is taken using the split() function it returns the items stored in a list
+ 
+ LIST METHODS:
+ 
+ 1.len() --gives the length of list
+ 2.append() --adds new elemnt to the end of list  (a list or a tuple can also be appended to an existing an list)
+ 3.insert() --adds the element at specified position
+ 4.extends() --adds multiple elemnts into existing list
+ 5.reverse() --reverses the list and displays
+ 6.remove() --removes specific item from the list (only one element at a time)
+ 7.pop() --removes last element (to pop specific element argument is index) ----returns the popped element always
+ 
+ LIST COMPREHENSIONS:
+ Used to create new list from other iterabl
+ 
+ 
+ 
  
  
