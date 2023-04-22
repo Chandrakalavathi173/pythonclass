@@ -1,0 +1,37 @@
+STRINGS:
+
+
+String is a sequence of characters represented using the quotes.
+Example:
+
+name="Chandu"
+print(type(name))
+
+Indexing can be used to access the each element in the string.
+
+name="Chandu"
+print(name[2])  #a
+
+print(name[-3])  #n    [negative indexing: Starts from end and frst index represented with -1]
+
+ STRING SLICING:
+ 
+ String slicing is used to print a part of string strting from any index.
+ it requires 3 arguments start index, end index and step value.(step value is optional amd default is 1)
+ 
+ name="Chandrakalavathi"
+ print(name[2:8])  #andrak
+ print(name[3:9:2])  #nrk
+ print(name[9:4:-1)   #lakar
+ #To print reverse of a string
+ print(name([::-1])   #reverse of string will be printed
+ 
+ STRING METHODS:
+ 1. endswith()  --returns true if string end with the f\given character/string.
+ 2. startswith() --returns true if it starts with the given argument.
+ 3. isdigit() -- returns true if string is digit (no arguments taken)
+ 4. isalpha() --returns true if string is alphabets
+ 5. index() --frst occurence of the character
+ 6. 
+ 
+ 
