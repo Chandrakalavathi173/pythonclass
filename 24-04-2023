@@ -9,3 +9,38 @@ Syntax:
 def function_name:
   #block of code
   
+  Example:
+  
+  def add():
+  a=10
+  b=20
+  c=a+b
+  print(c)
+add()
+-------------------------------------
+def add():
+  a=int(input())
+  b=int(input())        #Exception of value error occurs when string are given as input
+  print(a+b)
+add()
+----------------------------------------
+def add():
+    try:
+        a=int(input())
+    except ValueError as err:
+        print(err)
+    try:
+        b=int(input())
+    except ValueError as err:
+        print(err)
+    print(a+b)
+add()
+-------------------------------------------
+def add():
+  a=int(input())
+  b=int(input())
+  return (a+b)
+add()
+
+
+  
