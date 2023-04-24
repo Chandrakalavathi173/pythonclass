@@ -1,0 +1,11 @@
+FUNCTIONS:
+
+Advantages:
+1. Readability
+2. Reusability
+3. clean and light weight
+
+Syntax:
+def function_name:
+  #block of code
+  
