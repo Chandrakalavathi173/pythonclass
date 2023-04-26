@@ -6,3 +6,12 @@ CONSTRUCTER:
 Constructer will be executed before creation of an object.
 DESTRUCTER:
 destructor will be executed just before destruction of an object
+-------------------------------------------------------------------------------
+PROPERTIES OF OBJECT ORIENTED PROGRAMMING:
+1.Inheritance
+2.Polymorphism
+3.Abstraction
+4.Encapsulation
+-------------------------------------------------------------------------------
+INHERITANCE:
+Child class will have access to the parent propertiess but the viceversa isn't possible.
