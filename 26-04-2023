@@ -1,0 +1,8 @@
+OBJECT ORIENTED PROGRAMMING:
+
+Creation of a class:
+
+CONSTRUCTER:
+Constructer will be executed before creation of an object.
+DESTRUCTER:
+destructor will be executed just before destruction of an object
