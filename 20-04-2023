@@ -86,29 +86,143 @@ print(b)
  List is a datatype which stores data of different datatypes(heterogeneous)
  it is a mutable datatype
  
- example:
+ CREATION OF LISTS:
+ 
  list1=[1,2,"abc",10.998798]
  print(type(list1))
+ 
+ var=[]
+ print(type(var))
+ 
+ var=[1,2,3]
+ print(var)
+
  the elemnts accesssed using indexes.
+ 
+ INDEXING:
+ 
+ var=[1,2,3,"python"]
+ print(var[0],var[2],var[3])
+
  duplicates are allowed in the list.
+ 
+ DUPLICATES:
+ 
+ var=[1,2,3,"python",3,"c",2,1,"c"]
+ print(var)
+  
+ MULTIDIMENSIONAL LISTS:
+  
+ var=[[1,2,3],["python","c","java"]]
+ print(var[0])
+ print(var[1])
+ print(var[0][2])
+ print(var[1][1])
+ 
  when input is taken using the split() function it returns the items stored in a list
+ 
+ TAKING INPUT FOR LIST USING SPLIT FUNCTION:
+ 
+ var=input().split()
+ print(var)
+ 
+ USING MAP FUNCTION:
+ 
+ lst = map(int, input().split())
+ var=list(lst)
+ print(type(var[1]))
  
  LIST METHODS:
  
  1.len() --gives the length of list
  2.append() --adds new elemnt to the end of list  (a list or a tuple can also be appended to an existing an list)
  3.insert() --adds the element at specified position
- 4.extends() --adds multiple elemnts into existing list
+ 4.extend() --adds multiple elemnts into existing list
  5.reverse() --reverses the list and displays
  6.remove() --removes specific item from the list (only one element at a time)
  7.pop() --removes last element (to pop specific element argument is index) ----returns the popped element always
  8.clear() --clears the list
  9.index() -- returns index of frst occurance
  10.sort() --sorts the list in ascending order and descending order if reverse is given "true"
- LIST COMPREHENSIONS:
- Used to create new list from other iterable like string tuple list etc..
- syntax:
- lst=[x for x in range(1,11) if x%2==0)
+ 11.copy() --copies the lsit into other
+ 12.count() --count the no.of occurrences
+ 
+ 
+ EXAMPLE CODE SNIPPETS:
+ 
+ # len
+var=[1,2,3,"c","java","python"]
+print(len(var))
+
+
+# append
+var=[1,2,3,"c","java","python"]
+var.append("c++")
+print(var)
+
+# insert
+var=[1,2,3,"c","java","python"]
+var.insert(3,"c++")
+print(var)
+
+# extend
+var=[1,2,3,"c","java","python"]
+var.extend(["c++",4,5,"sql","html"])
+print(var)
+
+# reverse
+var=[1,2,3,"c","java","python"]
+var.reverse()
+print(var)
+
+# remove
+var=[1,2,3,"c","java","python"]
+var.remove("c")
+print(var)
+
+# pop
+var=[1,2,3,"c","java","python"]
+print(var.pop())
+print(var)
+
+# clear
+var=[1,2,3,"c","java","python"]
+var.clear()
+print(var)
+
+# index
+var=[1,2,3,"c","java","python","c"]
+print(var.index("c"))
+
+# sort
+var=[1,2,3,1,7,3,2,6,8]
+var1=["c","python","sql","java"]
+var.sort()
+var1.sort()
+print(var)
+print(var1)
+
+# count
+var=[1,2,3,"c","java","c","python","c"]
+print(var.count("c"))
+
+# copy
+var=[1,2,3,"c","java","python"]
+var1=var.copy()
+print(var1)
+ 
+LIST COMPREHENSIONS:
+
+Used to create new list from other iterable like string tuple list etc..
+syntax:
+lst=[x for x in range(1,11) if x%2==0)
+
+# list comprehension
+var=[x**2 for x in range(1,11)]
+print(var)
+
+var=[x**2 for x in range(1,11) if x%2==0]
+print(var)
  
  ---------------------------------------------------------------------------------------------------------------------------
  
