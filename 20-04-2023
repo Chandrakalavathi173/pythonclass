@@ -79,6 +79,85 @@ print(b)
  16.count() --counts the number of occurences of the element
  17. join() --joins the list tuples
  
+ 
+ EXAMPLE CODE SNIPPETS FOR STRING METHODS:
+ 
+ 
+ # startswith
+var="pythonprogramming"
+print(var.startswith("y"))
+
+# endswith
+var="pythonprogramming"
+print(var.endswith("g"))
+
+# isdigit or isdecimal
+var="pythonprogramming"
+print(var.isdigit())
+
+# isalpha
+var="pythonprogramming"
+print(var.isalpha())
+
+# isalnum
+var="pythonprogramming123"
+print(var.isalnum())
+
+# upper
+var="pythonprogramming"
+print(var.upper())
+
+# lower
+var="PYTHONPROGRAMMING"
+print(var.lower())
+
+# swapcase
+var="pythonPROGRAMMING"
+print(var.swapcase())
+
+# replace
+var="pythonprogramming"
+print(var.replace("python","java"))
+
+# len
+var="pythonprogramming"
+print(len(var))
+
+# index,rindex
+var="pythonprogramming"
+print(var.index("n"))
+print(var.rindex("n"))
+
+# capitalize
+var="python programming"
+print(var.capitalize())
+
+# find,rfind
+var="pythonprogramming"
+print(var.find("n"))
+print(var.rfind("n"))
+
+# count
+var="pythonprogramming"
+print(var.count("n"))
+
+# join
+var="abc"
+var1="def"
+print(var.join(var1))
+
+var="abc"
+var1="def"
+print("".join([var,var1]))
+
+# strip
+var="   abc    "
+print(var.strip())
+print(var.lstrip())
+print(var.rstrip())
+
+
+ 
  ------------------------------------------------------------------------------------------------------------------------------------------------------
  
  LISTS:
@@ -148,9 +227,9 @@ print(b)
  12.count() --count the no.of occurrences
  
  
- EXAMPLE CODE SNIPPETS:
+EXAMPLE CODE SNIPPETS FOR LIST METHODS:
  
- # len
+# len
 var=[1,2,3,"c","java","python"]
 print(len(var))
 
