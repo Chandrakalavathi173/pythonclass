@@ -27,17 +27,57 @@ print(name[-3])  #n    [negative indexing: Starts from end and frst index repres
  print(name([::-1])   #reverse of string will be printed
  STRING CONCATENATION HAPPENS USING TO "+" operator
  
+ ESCAPE SEQUENCING:
+ 
+print('I am a "human"')             I am a "human"
+print("I am a 'human'")             I am a 'human'
+print('''I am a "human"''')         I am a "human"
+print('I am a \'human\'')           I am a 'human'
+print("I am a \"human\"")           I am a "human"
+print('I am a \t\t\thuman')         I am a    human
+print('I am a \nhuman')             I am a 
+                                    human
+ 
+For UPDATION join funtion can be used
+ 
+a="abcd"
+list1=list(a)          #abyd
+list1[2]="y"
+print("".join(list1))
+
+for DELETION using slicing 
+
+a="abcdefg"
+b=a[:3]+a[4:]          #abcefg
+print(b)
+ 
+ complete string DELETION 
+ 
+ a="abcd"
+ print(a)          #abcd
+ del a
+ print(a)          #NameError
+ 
+ 
  STRING METHODS:
+ 
  1. endswith()  --returns true if string end with the f\given character/string.
  2. startswith() --returns true if it starts with the given argument.
  3. isdigit() -- returns true if string is digit (no arguments taken)
  4. isalpha() --returns true if string is alphabets
  5. index() --frst occurence of the character
  6. upper() --converts all characters into uppercase
- 7. lower -- conversts all characters into lowercase
+ 7. lower()-- conversts all characters into lowercase
  8. strip() --removes leading and trailing white spaces
  9. replace() --rplaces the old substring with new one (aruments : old,new)
  10. capitalize -- capitalizes the frst cahracter of the word
+ 11. isdecimal -- returns true if all are decimals
+ 12. swapcase() --converts upper to lower and viceversa
+ 13. len(argument) -- returns length of the string
+ 14. index,rindex --returns the lowest index of the element,returns the highest index
+ 15. find,rfind   --returns the lowest index of the element,returns the highest index
+ 16.count() --counts the number of occurences of the element
+ 17. join() --joins the list tuples
  
  ------------------------------------------------------------------------------------------------------------------------------------------------------
  
