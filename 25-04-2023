@@ -71,12 +71,118 @@ SETS:
 
 1. sets are unordered and unindexed
 2.sets do not allow duplicate elements
+3.sets are mutable
 example:
 
 arr=[1,2,1,4,3,4,2,3,4]
 set1=set(arr)
 
+CREATION:
+Duplicate values may be passed during creation
+Order is not defined in sets
 
+# empty set
+set1={}
+print(set1)
+
+set1=set()
+print(set1)
+
+# set with elements
+set1={"Geek","For", "Geeks", "f",1,4,3,3,4,1,"F"}
+print(set1)
+
+set1=set("Geek For Geeks")
+print(set1)
+
+string="Geeks"
+print(set(string))
+
+ACCESSING OF SET ELEMENTS:
+Cannot be accessed using index
+1. using loops
+2.using in keyword
+
+# ACCESSING OF SET ELEEMNTS
+set1={1,2,3,3,2,1,"c","python","c","c"}
+for i in set1:
+    print(i,end=" ")
+
+print("Geeks" in set1)
+
+METHODS OF SETS:
+
+1.add() --adds an element into the set
+2.update() --adds multiple eleemnts into the set
+3.remove() or discard() --removes an element from the set but araises key error if element doesnt exist  / discard also removes an element but doesnt get changedd if element doesnt exist
+4.pop() --removes the last elemnt and returns the elemnt
+5.clear() --removes all the elements
+6.copy() --copies the set into other
+
+# add
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set1.add("data structures")
+print(set1)
+
+# update
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set1.update([5,6,7],[56,43],(76,32,(12,23)))
+print(set1)
+
+# remove or discard
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set1.remove(2)
+set1.discard(1)
+set1.remove(3)
+set1.remove("c")
+set1.discard("python")
+print(set1)
+set1.discard(4)
+
+# pop 
+set1={1,2,3,3,2,1,"c","python","c","c"}
+print(set1.pop())
+
+# clear
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set1.clear()
+print(set1)
+
+# copy
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set2=set1.copy()
+print(set2)
+
+FROZEN SET:
+
+--->Frozen set is an immutable version of set object.
+--->in sets the elements can be modified but frozen sets can be modified after creation
+
+# frozen set
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set2=frozenset(set1)
+print(set2)
+set2.add(8)        # frozen set cannot be modified
+print(set2)
+
+MATHEMATICAL OPERTAIONS ON SETS:
+
+1.union() --returns union of two sets
+2.intersection() --returns intersection of two sets
+3.difference() -- retruns the difference of two sets
+4.isdisjoint() --returns true if two sets are disjoint
+
+# MATHEMATICAL CALCULATIONS
+# union
+set1={1,2,3,3,2,1,"c","python","c","c"}
+set2={2,9,4,"c","c++","java"}
+print(set1.union(set2))
+# difference
+print(set1.difference(set2))
+# intersection
+print(set1.intersection(set2))
+# isdisjoint
+print(set1.isdisjoint(set2))
 
 
 
