@@ -310,6 +310,66 @@ print(var)
  stores various data 
  to convert into tuple tuple() method can be used
  index can be used
+ only difference between lists and tuples is that tuples are immutable
+ 
+ CREATION:
+ # empty tuple
+tup=()
+print(type(tup))
+
+# not a tuple
+tup=(2)
+print(type(tup))
+print(tup)
+
+# single element tuple
+tup=(2,)
+print(type(tup))
+
+# multiple data type 
+tup=(1,2,"c")
+print(type(tup))
+
+# using built in function
+tup=tuple("123")
+print(type(tup))
+print(tup)
+
+# nested tuples
+tup1=(1,2,3)
+tup2=("c","c++","python")
+tup3=(tup1,tup2)
+print(tup3)
+
+# tuple repetition
+tup1=("python",)*3
+print(tup1)
+
+ACCESSING OF TUPLE ELEMENTS:
+
+# Accessing of elements using indexing
+tup1=(1,2,3,"c","python")
+print(tup1[3])
+
+# using unpacking
+tup1=(1,2,3,"c","python")
+a,b,c,d,e=tup1
+print(a,b,c,d,e)
+
+CONCATENATION OF TUPLES:
+
+# concatenating
+tup1=(1,2,3)
+tup2=("c","c++")
+print(tup1+tup2)
+
+SLICING OF TUPLES:
+
+# slicing
+tup=(1,2,3,4,4,5,6,7,8,9)
+print(tup[4:])
+print(tup[-1])
+print(tup[-1::-1])
  
  TUPLE METHODS:
  
@@ -318,6 +378,39 @@ print(var)
  3.min()
  4.sorted(argument)
  5.sum()
+ 6.index()
+ 7.count()
+ 8.all()
+ 9.any()
+ 10.tuple() built in function
+ 
+EXAMPLE CODE SNIPPETS:
+ 
+# indexing
+tup=(1,2,3,4,"c","python")
+print(tup.index("python"))
+
+# count
+tup=(1,2,"c",3,"c",4,"c","python")
+print(tup.count("c"))
+
+# all and any
+tup=(1,2,3,4,"c","python")
+tup1=()
+print(all(tup))
+print(any(tup1))
+
+# len
+tup=(1,2,3,4,"c","python")
+print(len(tup))
+
+# max min sum
+tup=(1,2,3,4)
+print(max(tup),min(tup),sum(tup))
+
+# sorted
+tup=(1,2,3,4,2,6,9,3,6,9,1)
+print(sorted(tup))
  
  
  
