@@ -66,7 +66,119 @@ def sumofnfibonocci(n):
 
 
 
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DICTIONARIES:
+
+Dictionary is a collection of key value pair.
+it stores the data in the form of key value pairs, while other datatypes store only single element.
+
+CREATION:
+
+Values in a dictionary can be of any type and duplicates are allowed but where as keys are immuatble and duplicate keys not allowed.
+Also keys are case sensitive.
+
+# CREATION
+
+# empty dict1
+dict1={}
+print(dict1)
+
+# dict with same datatype keys
+dict1={1:"c",2:"python",3:"c++"}
+print(dict1)
+
+# dict with different datatype keys
+dict1={1:"c","name":"Kavya","marks":20}
+print(dict1)
+
+# using built in function
+dict1=dict({1:"dds",2:"dwa","name":"dsc"})
+print(dict1)
+
+# nested dictionaries
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1)
+
+ADDING ELEMENTS INTO DICTIONARY:
+
+# ADDING ELEMENTS INTO DICT
+dict1={}
+dict1[0]="abc"
+dict1[1]="def"
+dict1["name"]="kavya"
+dict1["marks"]=20
+print(dict1)
+
+ACCESSING ELEMENTS OF DICTIONARY:
+
+# ACCESSING OF ELEMENTS
+# using key
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1[2])
+print(dict1[3])
+
+
+# using get method
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1.get(2))
+
+# for nested dictioanry
+print(dict1[3]["B"])
+print(dict1[3]["c"])
+
+DELETION:
+
+# DELETION
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+del dict1[2]
+print(dict1)
+
+METHODS OF DICTIONARIES:
+1.clear() -- removes all elements
+2.copy() --copies the dictionary
+3.items() --returns key value pair in the form of tuples
+4.keys() --returns all the keys
+5.values() --returns all the values
+6.pop() --removes and returns the spescified elmemnt
+7.popitem() --removes last key value pair
+
+EXAMPLE CODE SNIPPETS:
+
+# METHODS OF DICTIONARIES:
+
+# clear
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+dict1.clear()
+print(dict1)
+
+# copy
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+dict2=dict1.copy()
+print(dict2)
+
+# items
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1.items())
+
+# keys
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1.keys())
+
+# values
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1.values())
+
+# pop
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1.pop(2))
+
+# popitem
+dict1={1:"abc",2:"def",3:{"A":"python","B":"java","c":"c++"}}
+print(dict1.popitem())
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
 SETS:
 
 1. sets are unordered and unindexed
