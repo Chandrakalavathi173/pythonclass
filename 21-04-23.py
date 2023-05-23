@@ -26,10 +26,10 @@ ARRAY METHODS:
 3. pop() --removes the last element / if index is given removes that particular eleemnt
 4. remove() --removes frst occurance of that element from array
 5. index() --prints the index of frst occurance of the element
-6. count() --counts the no.of occurances of the element.
+6. count() --counts the no.of occurances of the element
 7. reverse() --reverses the array
 8. extend() --adds the elememnts to the existing array
-9. 
+
 
     
 
