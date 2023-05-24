@@ -1,72 +1,7 @@
 #dictionaries
 #sets
-#recursion(problem statements) --Tower of Hanoi problem
-#Object oriented programming
---------------------------------------------------------------------------
-Recursion
-
-def fun(n):
-  if n<=10:
-    return                  
-  print(n-1)                 #12 11 10 10 11 12 
-  f(n-1)                     time complexity:O(n) -- linear
-  print(n-1)
-----------------------------------------------------------------------------
-nth Fibonacci term (using recursion)
-
-def nthfibonocci(n):
-    if n==0:
-        return -1
-    if n==1:                                             #34
-        return 0
-    if n==2:
-        return 1
-    return nthfibonocci(n-1)+nthfibonocci(n-2)
-print(nthfibonocci(10))
-------------------------------------------------------------------------------
-sum of n fibonocci terms:
-
-def sumofnfibonocci(n):
-  if n<=0:
-    return -1
-  if n==1:
-    return 0
-  if n==2:
-    return 1
-  a=0
-  b=1
-  res=a+b
-  for i in range(0,n-2):
-    c=a+b
-    res=res+c
-    a=b
-    b=c
-  print(res)
-sumofnfibonocci(5)
----------------------------------------------------------------------------------
-sum of n fibonocci terms (using recursion)
-
-def sumofnfibonocci(n):
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 DICTIONARIES:
 
 Dictionary is a collection of key value pair.
